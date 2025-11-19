@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calcula factorial</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; padding: 2rem; max-width: 700px; margin: auto; }
+    label { display:block; margin-bottom:0.5rem; font-weight:600; }
+    input[type="number"] { width: 120px; padding:0.4rem; font-size:1rem; }
+    button { padding:0.5rem 0.8rem; font-size:1rem; margin-top:0.6rem; }
+    .note { margin-top:1rem; color:#555; font-size:0.9rem; }
+    .error { color: #b00020; margin-top:0.5rem; }
+  </style>
+</head>
+<body>
+  <h1>Calcula el factorial</h1>
+<hr>
+  <form id="factForm" method="get" action="factorial.php" novalidate>
+    <label for="num">Introdueix el número (valor enter ≥ 0):</label>
+    <input
+      id="num"
+      name="num"
+      type="number"
+      inputmode="numeric"
+</input><br>
+    <div class="error" id="error" role="status" aria-live="polite" style="display:none"></div>
+    <br />
+    <button type="submit">Calcula</button>
+  </form>
+
+<hr>
+</body>
+</html>
